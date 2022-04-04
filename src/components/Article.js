@@ -25,9 +25,8 @@ function Article({ title , date = "January 1, 1970" , preview , minutes}) {
   return (
     <article>
         <h3>{title}</h3>
-        <small>{date}</small>
+        <small>{date} • {totalEmojis()} {minutes} min read</small>
         <p>{preview}</p>
-        <p>{totalEmojis()} {minutes} min read</p>
     </article>
   )
 }
